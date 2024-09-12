@@ -1,0 +1,13 @@
+import pyautogui
+import time
+
+def keep_awake():
+    counter = 0
+    
+    while counter < 60:  
+        pyautogui.click(button='left')
+        counter += 1 
+        time.sleep(60)  
+
+if __name__ == "__main__":
+    keep_awake()
